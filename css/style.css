@@ -3,3 +3,11 @@
     height: 400px;
     backgroung: url(Imagenes/LOGO de la compañia.jpg)
     background-size: cover:
+/* css de detalle pelicula */
+.cajaInfo{
+    background-color: aquamarine;
+    height: 700px;
+    width: 40%;
+    margin-left: 100px;
+}
+
