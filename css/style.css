@@ -1,13 +1,84 @@
-    /* .header-img {
-    width 100%
-    height: 400px;
-    backgroung: url(Imagenes/LOGO de la compañia.jpg)
-    background-size: cover:
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+header{
+  width: 100vw;
+  height: 100px;
+  border-bottom: solid 1px rgba(16, 16, 16, 0.1);
+  font-family:sans-serif;
+  background-color: tomato;
+}
+header .inner{
+  width: 1300px; 
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+     
+   
+header .logo{
+  height: 10%;
+  display: table;
+  float: left;
+}
+  
+header.logo div{
+  color: rgb(199, 32, 32);
+  height: 10%;
+  display: table-cell;
+  vertical-align: middle;
+}
+header.logo img{
+  height: 50px;
+  margin-top: 5px;
+}
+header nav{
+ height: 100%;
+ float: right;
+}
+    
+header nav li{
+  display: table;
+  height: 100%;
+  float: left;
+  margin-right: 30px
+}
+
+header nav li:last-of-type{
+  margin-right: 0;
+}
+
+header nav span{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+header nav a{
+  color:crimson;
+}
+
+header nav .button{
+ background-color:darkgrey;
+ color: #fff;
+ padding: 10px 20px;
+ border-radius: 4px;
+}
+
+header nav .button:hover{
+ filter: brightness(1.05);
+}
+
+
+
+   }
 /* css de detalle pelicula */
 .cajaInfo{
-    background-color: aquamarine;
-    height: 700px;
-    width: 40%;
-    margin-left: 100px;
+ background-color: aquamarine;
+ height: 700px;
+  width: 40%;
+  margin-left: 100px;
 }
 
