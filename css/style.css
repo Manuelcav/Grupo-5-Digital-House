@@ -87,19 +87,28 @@ height: 10%;
 
 /* css del main index */
 
+#PeliculasPopularesTitulo{
+  margin: 5px;
+  text-align: center;
+}
+
 .PeliculasPopulares {
 display: flex;
+flex-wrap: wrap;
+align-items: center;
 
 }
 
 .PeliculasPopularesItem {
-  width: 20%;
+  width: 15%; 
+  margin: 20px;
+  
 }
 
-.LoMasVistoEnPeliculas {
-display: flex;
+.ImagenesPeliculasPopulares {
+  height: 300px;
+  width: 200px;
 }
 
-.PeliculasMasValoradas {
-display: flex;
-}
+
+
