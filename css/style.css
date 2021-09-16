@@ -89,6 +89,11 @@ height: 10%;
 
 .PeliculasPopulares {
 display: flex;
+
+}
+
+.PeliculasPopularesItem {
+  width: 20%;
 }
 
 .LoMasVistoEnPeliculas {
