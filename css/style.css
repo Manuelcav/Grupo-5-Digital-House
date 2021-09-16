@@ -84,3 +84,17 @@ color: white;
 text-align: center;
 height: 10%;
 }
+
+/* css del main index */
+
+.PeliculasPopulares {
+display: flex;
+}
+
+.LoMasVistoEnPeliculas {
+display: flex;
+}
+
+.PeliculasMasValoradas {
+display: flex;
+}
