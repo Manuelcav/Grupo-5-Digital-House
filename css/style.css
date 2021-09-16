@@ -79,10 +79,11 @@ header nav .button:hover{
 
 /* css de detalle pelicula */
 .cajaInfo{
-  background-color: aquamarine;
+  background-color: rgb(241, 236, 62);
   height: 700px;
   width: 40%;
   margin-left: 100px;
+  margin-top: 10px;
 }
 
 .cajitasInfo{
@@ -90,5 +91,10 @@ header nav .button:hover{
 }
 
 ul.cajitasInfo li{
-  padding-top: 70px;
+  padding-top: 60px;
+  padding-left: 50px;
+}
+
+body{
+  background-color: rgb(245, 207, 65);
 }
