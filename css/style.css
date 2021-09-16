@@ -98,3 +98,9 @@ ul.cajitasInfo li{
 body{
   background-color: rgb(245, 207, 65);
 }
+
+.fotoJoker{
+  height: 700px;
+  width: 35%;
+  float: right;
+}
