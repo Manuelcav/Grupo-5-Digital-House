@@ -71,7 +71,13 @@ body{
 .fotoJoker{
   height: 700px;
   width: 35%;
-  float: right;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.cajaGrande{
+  display: flex;
+  justify-content: end;
 }
 
 .footer{
