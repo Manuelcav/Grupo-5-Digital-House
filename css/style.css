@@ -95,7 +95,7 @@ height: 10%;
 
 /* css del main index */
 
-#PeliculasPopularesTitulo{
+.PeliculasPopularesTitulo{
   margin-top: 30px;
   text-align: center;
   font-family: sans-serif;
