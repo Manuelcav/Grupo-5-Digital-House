@@ -107,7 +107,7 @@ height: 10%;
 /* css del main index */
 
 .PeliculasTitulo{
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center;
   font-family: sans-serif;
 }
@@ -118,6 +118,7 @@ flex-wrap: wrap;
 align-items: center;
 justify-content: center;
 align-items: baseline;
+margin-bottom: 40px;
 }
 
 .PeliculasItem {
