@@ -47,6 +47,16 @@ header nav li{
 }
 
 /* css de detalle pelicula */
+
+.detalleDeJoker{
+  height: 60px;
+  width: 100%;
+  background-color: rgb(255, 87, 51);
+  text-align: center;
+  padding-top: 20px;
+  font-size: 30px;
+}
+
 .cajaInfo{
   background-color: rgb(241, 177, 39);
   height: 700px;
