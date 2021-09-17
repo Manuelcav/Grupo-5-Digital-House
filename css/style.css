@@ -56,6 +56,16 @@ header nav li{
   line-height: 20px;
   padding-left: 0px;
 }
+.button{
+  font-size: 20x;
+  font-family: Verdana;
+  text-align: left;
+  margin-top: 1px;
+  float: left;
+  margin:15px;
+  line-height: 20px;
+  padding-left: 0px;
+}
 
 /* css de detalle pelicula */
 
