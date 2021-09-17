@@ -137,3 +137,28 @@ align-items: baseline;
 
 /* css de detalle serie */
 
+.cajaInfo2{
+  background-color: rgb(241, 177, 39);
+  height: 700px;
+  width: 40%;
+  margin-left: 130px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.cajitasInfo2{
+  padding-top: 15px;
+  padding-right: 10px;
+}
+
+ul.cajitasInfo2 li{
+  padding-top: 50px;
+  padding-left: 25px;
+}
+
+.fotoBreakingBad{
+  height: 700px;
+  width: 40%;
+  margin-top: 10px;
+  margin-left: 75px;
+}
