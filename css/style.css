@@ -93,7 +93,7 @@ header nav li{
 }
 
 ul.cajitasInfo li{
-  padding-top: 60px;
+  padding-top: 50px;
   padding-left: 25px;
 }
 
@@ -173,7 +173,7 @@ margin-bottom: 40px;
 }
 
 ul.cajitasInfo2 li{
-  padding-top: 50px;
+  padding-top: 40px;
   padding-left: 25px;
 }
 
@@ -182,4 +182,15 @@ ul.cajitasInfo2 li{
   width: 40%;
   margin-top: 10px;
   margin-left: 75px;
+}
+
+/* css de favoritos */
+
+.cajaFav{
+  height: 500px;
+  width: 70%;
+  background-color: rgb(241, 177, 39);
+  margin-top: 40px;
+  margin-left: 205px;
+  border: solid 5px rgb(255, 170, 40);
 }
