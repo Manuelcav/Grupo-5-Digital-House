@@ -46,6 +46,16 @@ header nav li{
   line-height: 50px;
   padding-left: 9px;
 }
+.Searchbar{
+  font-size: 10x;
+  font-family: Verdana;
+  text-align: left;
+  margin-top: 0px;
+  float: left;
+  margin:15px;
+  line-height: 20px;
+  padding-left: 0px;
+}
 
 /* css de detalle pelicula */
 
