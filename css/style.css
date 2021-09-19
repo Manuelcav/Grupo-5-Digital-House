@@ -128,7 +128,12 @@ height: 10%;
 /* css del main index */
 
 .PeliculasTitulo{
-  margin-top: 10px;
+  text-align: center;
+  font-family: sans-serif;
+} 
+
+.PeliculasTituloPopulares{
+  margin-top: 40px;
   text-align: center;
   font-family: sans-serif;
 } 
