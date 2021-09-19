@@ -196,3 +196,33 @@ ul.cajitasInfo2 li{
 }
 /* css de generos */
 
+.ulGeneros{
+  list-style-type: square;
+}
+
+.GenerosPeliculas{
+  display: block;
+  float: left;
+  overflow: hidden;
+  margin-left: 20%;
+  margin-top: 100px;
+  margin-right: 20%;
+  background-color: rgb(241, 177, 39);
+  border: solid 5px rgb(255, 170, 40);
+}
+
+.GenerosSeries{
+  display: block;
+  float: left;
+  overflow: hidden;
+  margin-top: 100px;
+  background-color: rgb(241, 177, 39);
+  border: solid 5px rgb(255, 170, 40);
+}
+
+#tituloGeneros{
+  text-align: center;
+  margin-top: 50px;
+  font-family: sans-serif;
+}
+
