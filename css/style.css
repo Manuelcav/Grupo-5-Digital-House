@@ -130,7 +130,7 @@ height: 10%;
   margin-top: 10px;
   text-align: center;
   font-family: sans-serif;
-}
+} 
 
 .Peliculas {
 display: flex;
@@ -196,8 +196,9 @@ ul.cajitasInfo2 li{
 }
 /* css de generos */
 
-.ulGeneros{
-  list-style-type: square;
+.subTituloGeneros{
+  margin-bottom: 20px;
+  
 }
 
 .GenerosPeliculas{
