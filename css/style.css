@@ -111,6 +111,7 @@ body{
 .cajaGrande{
   display: flex;
   justify-content: end;
+  margin-bottom: 100px;
 }
 
 .footer{
@@ -192,7 +193,6 @@ ul.cajitasInfo2 li{
   background-color: rgb(241, 177, 39);
   margin-top: 40px;
   margin-left: 205px;
-  border: solid 5px rgb(255, 170, 40);
 }
 /* css de generos */
 
