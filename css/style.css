@@ -123,7 +123,7 @@ height: 10%;
   font-family: sans-serif;
   height: 60px;
   width: 100%;
-  background-color: rgb(255, 110, 40);
+  background-color: rgb(149, 165, 166);
   padding-top: 20px;
   font-size: 30px;
 } 
@@ -134,7 +134,7 @@ height: 10%;
   font-family: sans-serif;
   height: 60px;
   width: 100%;
-  background-color: rgb(255, 110, 40);
+  background-color: rgb(149, 165, 166);
   padding-top: 20px;
   font-size: 30px;
 } 
@@ -213,8 +213,8 @@ ul.cajitasInfo2 li{
   margin-left: 20%;
   margin-top: 100px;
   margin-right: 20%;
-  background-color: rgb(241, 177, 39);
-  border: solid 5px rgb(255, 170, 40);
+  background-color: rgb(93, 109, 126);
+  border: solid 5px rgb(93, 109, 126);
 }
 
 .GenerosSeries{
@@ -222,15 +222,27 @@ ul.cajitasInfo2 li{
   float: left;
   overflow: hidden;
   margin-top: 100px;
-  background-color: rgb(241, 177, 39);
-  border: solid 5px rgb(255, 170, 40);
+  background-color: rgb(93, 109, 126);
+  border: solid 5px rgb(93, 109, 126);
+}
+
+div.GenerosSeries h3{
+  color: black;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+div.GenerosPeliculas h3{
+  color: black;
+  font-style: italic;
+  text-decoration: underline;
 }
 
 .tituloGeneros{
   text-align: center;
   height: 60px;
   width: 100%;
-  background-color: rgb(255, 110, 40);
+  background-color: rgb(149, 165, 166);
   padding-top: 20px;
   font-size: 30px;
   font-weight: normal;
