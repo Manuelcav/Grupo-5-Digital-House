@@ -5,6 +5,8 @@
   text-decoration: none;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+
 header{
   width: 100%;
   height: 60px;
@@ -12,9 +14,7 @@ header{
   font-family:sans-serif;
   background-color: #E6E6FA;
 }
-     
 
-  
 header nav{
  height: 100%;
  float: right;
@@ -239,8 +239,13 @@ ul.cajitasInfo2 li{
 /* Joker buscador*/
 * {
  box-sizing: border-box;
-
 }
+
+.main-container{
+max-width: 1180px;  
+margin: 0px auto;
+}
+
 .section-flex-container{
 display: flex;
 flex-direction: column;
@@ -259,9 +264,18 @@ padding-right: 10px;
 }
 
 .Joker-buscador{
-order: 1;
-align-self: auto;
-width: 10%;
+margin: 0 0 30px;
+width: 15%;
+}
+
+.titulojoker{
+color: white; 
+}
+
+.Descripcionjoker{
+  color: white;
+  text-align: left;
+ 
 }
 /* CSS breaking bad */
 
