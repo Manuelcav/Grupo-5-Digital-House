@@ -31,7 +31,33 @@
        
     </nav>
     </div>
+            <script>
+            const queryString= window.location.search; 
+            console.log(queryString)
+            const urlParams=new URLSearchParams(queryString)
+            const search=urlParams.get('search')
+            console.log(search);
+            
+            if (search == "joker") {
+               //document.write ("<span class='yellow'>Pelicula: " + search + ". </span>");
+                location.replace("file:///C:/Users/propietario/OneDrive/Escritorio/Programacion/Trabajo%20Integrador/Grupo-5-Digital-House/detallepelicula.html")
+             }
+
+             if (search == "breaking bad") {
+               // document.write("<span class='yellow'>Pelicula: " + search + ". </span>");
+                location.replace("file:///C:/Users/propietario/OneDrive/Escritorio/Programacion/Trabajo%20Integrador/Grupo-5-Digital-House/detalleserie.html")
+             }
+                
+             else {
+                document.write("<span class='yellow'>no se encontró tu pelicula: " + search + ". </span>");
+             }
+         
+             </script>
+                
+
     </header>
+
+       
 
     
     <footer>
