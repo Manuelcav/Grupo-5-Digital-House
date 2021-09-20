@@ -52,7 +52,7 @@ header nav li{
   padding-left: 0px;
 }
 .fa-fa-search{
-  font-size: 10px;
+  font-size: 20px;
   text-align: left;
   margin-top: 0px;
   float: left;
@@ -63,14 +63,14 @@ header nav li{
 .detalleDeJoker{
   height: 60px;
   width: 100%;
-  background-color: rgb(255, 110, 40);
+  background-color: rgb(149, 165, 166);
   text-align: center;
   padding-top: 20px;
   font-size: 30px;
 }
 
 .cajaInfo{
-  background-color: rgb(241, 177, 39);
+  background-color: rgb(93, 109, 126);
   height: 700px;
   width: 40%;
   margin-left: 130px;
@@ -237,6 +237,10 @@ ul.cajitasInfo2 li{
 }
 
 /* Joker buscador*/
+* {
+ box-sizing: border-box;
+
+}
 .section-flex-container{
 display: flex;
 flex-direction: column;
