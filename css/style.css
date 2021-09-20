@@ -65,7 +65,7 @@ header nav li{
   width: 100%;
   background-color: rgb(149, 165, 166);
   text-align: center;
-  padding-top: 20px;
+  padding-top: 13px;
   font-size: 30px;
 }
 
@@ -196,7 +196,7 @@ ul.cajitasInfo2 li{
 .cajaFav{
   height: 500px;
   width: 70%;
-  background-color: rgb(241, 177, 39);
+  background-color: rgb(93, 109, 126);
   margin-top: 40px;
   margin-left: 205px;
 }
