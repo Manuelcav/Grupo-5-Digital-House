@@ -269,4 +269,22 @@ width: 10%;
 
  /* Detalle de genero */
  
- 
+.subtituloDetalleGenero{
+  text-align: center;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 30px;
+} 
+
+.detalleGeneros{
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.detalleGenerosItem{
+  margin-left: 30px;
+  margin-right: 30px;
+}
