@@ -52,7 +52,7 @@ header nav li{
   padding-left: 0px;
 }
 .fa-fa-search{
-  font-size: 10px;
+  font-size: 20px;
   text-align: left;
   margin-top: 0px;
   float: left;
@@ -237,6 +237,10 @@ ul.cajitasInfo2 li{
 }
 
 /* Joker buscador*/
+* {
+ box-sizing: border-box;
+
+}
 .section-flex-container{
 display: flex;
 flex-direction: column;
