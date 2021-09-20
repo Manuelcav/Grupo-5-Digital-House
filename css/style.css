@@ -89,7 +89,7 @@ ul.cajitasInfo li{
 }
 
 body{
-  background-image: url(/Imagenes/fondo-madera.jpeg);
+  background-image: url("../Imagenes/fondo-madera.jpeg");
 }
 
 .fotoJoker{
