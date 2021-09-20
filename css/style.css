@@ -121,12 +121,22 @@ height: 10%;
 .PeliculasTitulo{
   text-align: center;
   font-family: sans-serif;
+  height: 60px;
+  width: 100%;
+  background-color: rgb(255, 110, 40);
+  padding-top: 20px;
+  font-size: 30px;
 } 
 
 .PeliculasTituloPopulares{
   margin-top: 40px;
   text-align: center;
   font-family: sans-serif;
+  height: 60px;
+  width: 100%;
+  background-color: rgb(255, 110, 40);
+  padding-top: 20px;
+  font-size: 30px;
 } 
 
 .Peliculas {
@@ -135,7 +145,7 @@ flex-wrap: wrap;
 align-items: center;
 justify-content: center;
 align-items: baseline;
-margin-bottom: 40px;
+margin-bottom: 30px;
 }
 
 .PeliculasItem {
@@ -216,7 +226,7 @@ ul.cajitasInfo2 li{
   border: solid 5px rgb(255, 170, 40);
 }
 
-#tituloGeneros{
+.tituloGeneros{
   text-align: center;
   height: 60px;
   width: 100%;
@@ -256,3 +266,7 @@ width: 10%;
   align-self: auto;
   width: 10%;
   }
+
+ /* Detalle de genero */
+ 
+ 
