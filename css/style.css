@@ -226,3 +226,31 @@ ul.cajitasInfo2 li{
   font-weight: normal;
 }
 
+/* Joker buscador*/
+.section-flex-container{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+height: 200px;
+}
+
+.article-flex-item{
+ border: 1px solid black;
+ width: 20%;
+ text-align: center;  
+}
+
+.Joker-buscador{
+order: 1;
+align-self: auto;
+width: 10%;
+}
+/* CSS breaking bad */
+
+.breakingbad-buscador{
+  order: 1;
+  align-self: auto;
+  width: 10%;
+  }
