@@ -111,6 +111,7 @@ body{
 .cajaGrande{
   display: flex;
   justify-content: end;
+  margin-bottom: 100px;
 }
 
 .footer{
@@ -127,10 +128,15 @@ height: 10%;
 /* css del main index */
 
 .PeliculasTitulo{
-  margin-top: 10px;
   text-align: center;
   font-family: sans-serif;
-}
+} 
+
+.PeliculasTituloPopulares{
+  margin-top: 40px;
+  text-align: center;
+  font-family: sans-serif;
+} 
 
 .Peliculas {
 display: flex;
@@ -192,12 +198,11 @@ ul.cajitasInfo2 li{
   background-color: rgb(241, 177, 39);
   margin-top: 40px;
   margin-left: 205px;
-  border: solid 5px rgb(255, 170, 40);
 }
 /* css de generos */
 
-.ulGeneros{
-  list-style-type: square;
+.subTituloGeneros{
+  margin-bottom: 30px;
 }
 
 .GenerosPeliculas{
@@ -222,7 +227,11 @@ ul.cajitasInfo2 li{
 
 #tituloGeneros{
   text-align: center;
-  margin-top: 50px;
-  font-family: sans-serif;
+  height: 60px;
+  width: 100%;
+  background-color: rgb(255, 110, 40);
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: normal;
 }
 
