@@ -59,6 +59,13 @@ header nav li{
   float: left;
 }
 
+@media screen {
+.header{
+float: none;
+display: block;
+text-align: left;
+}
+
 /* css de detalle pelicula */
 
 .detalleDeJoker{
@@ -397,6 +404,3 @@ li.detalleGenerosItem img{
     margin-bottom: 100px;
     margin-top: 20px;
   }
-
-  
-}
