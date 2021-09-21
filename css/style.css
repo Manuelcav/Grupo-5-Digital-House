@@ -59,6 +59,13 @@ header nav li{
   float: left;
 }
 
+@media screen {
+.header{
+float: none;
+display: block;
+text-align: left;
+}
+
 /* css de detalle pelicula */
 
 .detalleDeJoker{
