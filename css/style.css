@@ -326,3 +326,22 @@ color: white;
   margin-right: 30px;
 }
 
+@media (max-width: 420px){
+  .cajaGrande{
+    width: 420px;
+    flex-wrap: wrap;
+  }
+  
+  .cajaInfo{
+    width: 100%;
+    height: 1200px;
+  }
+
+  .cajitasInfo{
+    width: 100%;
+  }
+
+  .fotoJoker{
+    width: 100%;
+  }
+}
