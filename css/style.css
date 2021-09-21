@@ -361,12 +361,12 @@ li.detalleGenerosItem img{
   }
 /* media queries parte Augusto */
 
-.Peliculas{
+  .Peliculas{
   flex-direction: column;
-  margin-left: 18px;
+  align-items: center;
 }  
 
-.PeliculasTitulo{
+  .PeliculasTitulo{
     color: white;
   } 
   
@@ -378,12 +378,9 @@ li.detalleGenerosItem img{
   ul.Peliculas li{
     width: 70vw; 
   }
-  
-  ul.Peliculas img{
-    width: 100%;   
-  }
 
   /*----*/
+
   .tituloGeneros{
     margin-top: 60px;
   }
@@ -398,5 +395,15 @@ li.detalleGenerosItem img{
     margin-top: 20px;
   }
 
+  .detalleGeneros{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .detalleGenerosItem{
+    margin-bottom: 30px;
+    width: 70vw;
+  }
   
 }
