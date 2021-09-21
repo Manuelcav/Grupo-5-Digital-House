@@ -262,6 +262,7 @@ div.GenerosPeliculas h3{
 .main-container{
 max-width: 1180px;  
 margin: 0px auto;
+align-self: left;
 }
 
 .section-flex-container{
@@ -275,15 +276,10 @@ padding-top: 15px;
 padding-right: 10px;
 }
 
-.article-flex-item{
- border: 1px solid black;
- width: 20%;
- text-align: center;  
-}
-
 .Joker-buscador{
-margin: 0 0 30px;
-width: 15%;
+order: 1;
+align-self: auto;
+width: 10%;
 }
 
 .titulojoker{
