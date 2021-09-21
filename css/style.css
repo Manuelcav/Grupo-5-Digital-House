@@ -322,6 +322,11 @@ color: white;
   margin-right: 30px;
 }
 
+li.detalleGenerosItem img{
+  height: 280px;
+  width: 100%;
+}
+
 @media (max-width: 420px){
   .cajaGrande{
     width: auto;
@@ -378,4 +383,20 @@ color: white;
     width: 100%;   
   }
 
+  /*----*/
+  .tituloGeneros{
+    margin-top: 60px;
+  }
+
+  .GenerosPeliculas{
+    margin-top: 40px;
+  }
+
+  .GenerosSeries{
+    margin-left: 15%;
+    margin-bottom: 100px;
+    margin-top: 20px;
+  }
+
+  
 }
