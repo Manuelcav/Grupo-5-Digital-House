@@ -352,5 +352,26 @@ color: white;
 
 /* media queries parte Augusto */
 
+.Peliculas{
+  flex-direction: column;
+  margin-left: 18px;
+}  
+
+.PeliculasTitulo{
+    color: white;
+  } 
+  
+  .PeliculasTituloPopulares{
+    color: white;
+    
+  }  
+  
+  ul.Peliculas li{
+    width: 70vw; 
+  }
+  
+  ul.Peliculas img{
+    width: 100%;
+  }
   
 }
