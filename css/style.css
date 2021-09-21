@@ -328,15 +328,17 @@ li.detalleGenerosItem img{
 }
 
 @media (max-width: 420px){
+/* media queries parte clara */
+
   .cajaGrande{
     width: auto;
-    flex-wrap: wrap;
     flex-direction: column;
+    justify-content: center;
   }
   
   .cajaInfo{
     width: auto;
-    height: 750px;
+    height: 900px;
   }
 
   .cajitasInfo{
@@ -349,16 +351,15 @@ li.detalleGenerosItem img{
 
   .detalleDeJoker{
     width: auto;
-    height: 150px;
+    height: 100px;
+    margin-top: 50px;
   }
 
   .cajaFav{
     width: auto;
   }
 
-  header{
-    width: auto;
-  }
+  
 /* media queries parte Augusto */
 
   .Peliculas{
