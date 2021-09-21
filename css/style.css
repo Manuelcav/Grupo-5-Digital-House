@@ -153,12 +153,12 @@ align-items: baseline;
 margin-bottom: 30px;
 }
 
-.PeliculasItem {
+ul.Peliculas li{
   width: 15%; 
-  margin: 25px;  
+  margin: 25px;
 }
 
-.ImagenesPeliculas {
+ul.Peliculas img{
   height: 280px;
   width: 200px;
 }
