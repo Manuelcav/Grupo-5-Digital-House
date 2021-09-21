@@ -160,7 +160,7 @@ ul.Peliculas li{
 
 ul.Peliculas img{
   height: 280px;
-  width: 200px;
+  width: 100%;
 }
 
 .PeliculasTexto{
@@ -349,4 +349,8 @@ color: white;
   .header{
     height: 100px;
   }
+
+/* media queries parte Augusto */
+
+  
 }
