@@ -359,6 +359,15 @@ li.detalleGenerosItem img{
     width: auto;
   }
 
+  .cajaInfo2{
+    height: 1200px;
+    width: 250px;
+  }
+
+  .fotoBreakingBad{
+    width: 300px;
+  }
+
   
 /* media queries parte Augusto */
 
@@ -407,7 +416,7 @@ li.detalleGenerosItem img{
     width: 70vw;
   }
   /* media queries manuel */
-  
+
   header{
     float: none;
     display: block;
