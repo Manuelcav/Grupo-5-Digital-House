@@ -329,22 +329,20 @@ li.detalleGenerosItem img{
 /* media queries parte clara */
 
   .cajaGrande{
-    width: auto;
     flex-direction: column;
     justify-content: center;
   }
   
   .cajaInfo{
-    width: auto;
-    height: 900px;
-  }
-
-  .cajitasInfo{
-    width: auto;
+    height: 850px;
+    width: 340px;
+    margin-left: 10%;
   }
 
   .fotoJoker{
-    width: auto;
+    width: 340px;
+    height: 500px;
+    margin-left: 10%;
   }
 
   .detalleDeJoker{
@@ -354,7 +352,22 @@ li.detalleGenerosItem img{
   }
 
   .cajaFav{
-    width: auto;
+    width: 80%;
+    height: 400px;
+    margin-left: 10%;
+    margin-top: 6%;
+  }
+
+  .cajaInfo2{
+    height: 870px;
+    width: 340px;
+    margin-left: 10%;
+  }
+
+  .fotoBreakingBad{
+    width: 340px;
+    height: 500px;
+    margin-left: 10%;
   }
 
   
@@ -410,4 +423,11 @@ li.detalleGenerosItem img{
 @media screen and (max-width: 300px){
   
 }
+
+  header{
+    float: none;
+    display: block;
+    text-align: left;
+    }
+    
 }
