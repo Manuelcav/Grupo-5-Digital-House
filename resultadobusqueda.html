@@ -38,18 +38,17 @@
             const search=urlParams.get('search')
             console.log(search);
             
-            if (search == "joker") { 
+            if (search == "joker"){   
 
-                location.replace("Joker.html")
+               location.replace("joker.html")
              }
-
              if (search == "breaking bad") {
 
                 location.replace("breakingbad.html")
              }
                 
              else {
-                document.write("<span class='yellow'>no se encontró tu pelicula: " + search + ". </span>");
+                 document.write("<span class='tellow'>No se encontro tu pelicula:" + search + ". </span>");
              }
          
              </script>
