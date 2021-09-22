@@ -392,8 +392,6 @@ li.detalleGenerosItem img{
     width: 70vw; 
   }
 
-  /*----*/
-
   .tituloGeneros{
     margin-top: 60px;
   }
@@ -431,3 +429,4 @@ li.detalleGenerosItem img{
     float: none;
   }
 }
+
