@@ -419,23 +419,15 @@ li.detalleGenerosItem img{
     width: 70vw;
   }
 
+/* */
 
-  /* media queries manu 
-   @media (max-width: 425px){
-    .header {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
-}*/
-@media only screen and (min-width:425px) and (max: width 768px){
-  .header{
-    height: 60px;
-  }
-  .logo, .search-button{
-    line-height: 60px;
+  .header-right li{
+    background-color: #E6E6FA;
+    margin-left: 18px;
+    margin-right: 14px;
   }
 
-}
+  .header-right{
+    float: none;
+  }
 }
