@@ -57,27 +57,6 @@
      
     </div>
 </main>
-<script>
-    const queryString= window.location.search;
-    console.log(queryString)
-    const urlParams=new URLSearchParams(queryString)
-    const search=urlParams.get('search')
-    console.log(search);
-    
-    if (search == "joker"){   
-
-       location.replace("joker.html")
-     }
-     if (search == "breaking bad") {
-
-        location.replace("breakingbad.html")
-     }
-        
-     else {
-         document.write("<span class='tellow'>No se encontro tu pelicula:" + search + ". </span>");
-     }
- 
-     </script>
 
     <footer>
         <div class="footer">
