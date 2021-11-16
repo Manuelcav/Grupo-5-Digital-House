@@ -164,6 +164,42 @@ ul.Peliculas img{
   width: 100%;
 }
 
+.Peliculas2 {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: baseline;
+margin-bottom: 30px;
+}
+  
+ul.Peliculas2 li{
+width: 15%; 
+margin: 25px;
+}
+  
+ul.Peliculas2 img{
+height: 280px;
+width: 100%;
+}
+
+.Peliculas3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 30px;
+}
+    
+ul.Peliculas3 li{
+  width: 15%; 
+  margin: 25px;
+ }
+    
+ul.Peliculas3 img{
+  height: 280px;
+  width: 100%;
+}
+
 .PeliculasTexto{
   text-align: center;
   font-family: sans-serif; 

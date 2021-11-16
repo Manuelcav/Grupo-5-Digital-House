@@ -26,7 +26,7 @@ fetch(urlPopulares)
     .catch(function(error){
         console.log(error);
     })
-/*
+   
 let urlMasValoradas = 'https://api.themoviedb.org/3/movie/top_rated?api_key=6c457fc9dfa8d0a4c7572bd5162907c9'
 
 fetch(urlMasValoradas)
@@ -36,7 +36,7 @@ fetch(urlMasValoradas)
     .then(function(data){
         console.log(data);
 
-        let peliculasPopulares = document.querySelector('ul.Peliculas');
+        let peliculasMasValoradas = document.querySelector('ul.Peliculas2');
         let peliculas = '';
         
         for (let i=0; i<5; i++) {
@@ -50,9 +50,9 @@ fetch(urlMasValoradas)
                         </li>`;
         }
 
-        peliculasPopulares.innerHTML = peliculas
+        peliculasMasValoradas.innerHTML = peliculas
     })
     .catch(function(error){
         console.log(error);
     })
-    */ 
+ 
