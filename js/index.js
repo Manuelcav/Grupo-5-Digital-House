@@ -27,7 +27,7 @@ fetch(urlPopulares)
         console.log(error);
     })
    
-let urlMasValoradas = 'https://api.themoviedb.org/3/movie/top_rated?api_key=6c457fc9dfa8d0a4c7572bd5162907c9'
+let urlMasValoradas = 'https://api.themoviedb.org/3/movie/top_rated?api_key=6c457fc9dfa8d0a4c7572bd5162907c9';
 
 fetch(urlMasValoradas)
     .then(function(response){
@@ -51,6 +51,35 @@ fetch(urlMasValoradas)
         }
 
         peliculasMasValoradas.innerHTML = peliculas
+    })
+    .catch(function(error){
+        console.log(error);
+    })
+
+let urlSeries= 'https://api.themoviedb.org/3/tv/popular?api_key=6c457fc9dfa8d0a4c7572bd5162907c9';
+
+fetch(urlSeries)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(data){
+        console.log(data);
+
+        let seriesPopulares = document.querySelector('ul.Peliculas3');
+        let series = '';
+        
+        for (let i=0; i<5; i++) {
+            console.log(data.results[i]);
+           series += `<li>
+                            <a href='detallepelicula.html?id=${data.results[i].id}' target="blanck">
+                                <img src='https://image.tmdb.org/t/p/w342/${data.results[i].poster_path}' alt="${data.results[i].original_name}" >
+                                <h3 class="PeliculasTexto"> ${data.results[i].original_name}</h3>
+                                <h4 class="PeliculasTexto">${data.results[i].first_air_date}</h4>
+                            </a>
+                        </li>`;
+        }
+
+        seriesPopulares.innerHTML = series
     })
     .catch(function(error){
         console.log(error);
