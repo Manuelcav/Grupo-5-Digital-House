@@ -13,6 +13,7 @@ fetch (url)
 
         let detalleDe = document.querySelector('detalleDeJoker');
         let nombre = document.querySelector('nombre');
-        
+
+        detalleDe.innerText = `Detalle de ${data.name}`
         nombre.innerText = data.title;
     })

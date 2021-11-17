@@ -73,7 +73,7 @@ header nav li{
 
 .cajaInfo{
   background-color: rgb(93, 109, 126);
-  height: 700px;
+  height: 900px;
   width: 40%;
   margin-left: 130px;
   margin-top: 10px;
@@ -98,8 +98,8 @@ body{
 }
 
 .fotoJoker{
-  height: 700px;
-  width: 35%;
+  height: 900px;
+  width: 40%;
   margin-top: 10px;
   margin-left: 90px;
 }
