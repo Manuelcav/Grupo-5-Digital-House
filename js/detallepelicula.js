@@ -2,7 +2,7 @@ let qs = location.search;
 let qsto = new URLSearchParams(qs);
 let id = qsto.get('id');
 
-let url = 'https://api.themoviedb.org/3/movie/{movie_id}';
+let url = `https://api.themoviedb.org/3/movie/${id}?api_key=03a55d296e4c1e472b75453d21cefd67`;
 
 fetch(url)
     .then(function(response){
@@ -15,8 +15,8 @@ fetch(url)
         let nombre = document.querySelector('.nombre');
         let calificacion = document.querySelector('.calificacion');
 
-        detalleDe.innerText = data.name;
-        nombre.innerText = 
+        detalleDe.innerText = `Detalle de ${data.title}`;
+        
 
     })
     .catch(function(error){
