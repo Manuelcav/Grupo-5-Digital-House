@@ -10,8 +10,10 @@ fetch(url)
     })
     .then(function(data){
         console.log(data);
-        let detalleJoker = document.querySelector('.detalleDeJoker');
-        let li = document.querySelector(li);
+        let detalleDe = document.querySelector('.detalleDeJoker');
+        let nombre = document.querySelector('.nombre')
+        let calificacion = document.querySelector('.calificacion');
+        
     })
     .catch(function(error){
         console.log(error);
