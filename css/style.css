@@ -419,6 +419,16 @@ li.detalleGenerosItem img{
   align-items: center;
   }  
 
+  .Peliculas2{
+    flex-direction: column;
+    align-items: center;
+    }  
+
+  .Peliculas3{
+    flex-direction: column;
+    align-items: center;
+    }  
+
   .PeliculasTitulo{
     color: white;
   } 
@@ -429,6 +439,14 @@ li.detalleGenerosItem img{
   }  
   
   ul.Peliculas li{
+    width: 70vw; 
+  }
+
+  ul.Peliculas2 li{
+    width: 70vw; 
+  }
+
+  ul.Peliculas3 li{
     width: 70vw; 
   }
 
