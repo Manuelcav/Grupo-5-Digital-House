@@ -20,6 +20,8 @@ fetch(url)
         let img = document.querySelector('.fotoJoker');
         let generos = document.querySelector('.generos')
 
+        
+
         detalleDe.innerText = `Detalle de ${data.title}`;
         nombre.innerText = data.title;
         calificacion.innerText += data.vote_average;
