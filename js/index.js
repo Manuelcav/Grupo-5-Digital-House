@@ -71,7 +71,7 @@ fetch(urlSeries)
         for (let i=0; i<5; i++) {
             console.log(data.results[i]);
            series += `<li>
-                            <a href='detallepelicula.html?id=${data.results[i].id}' target="blanck">
+                            <a href='detalleserie.html?id=${data.results[i].id}' target="blanck">
                                 <img src='https://image.tmdb.org/t/p/w342/${data.results[i].poster_path}' alt="${data.results[i].original_name}" >
                                 <h3 class="PeliculasTexto"> ${data.results[i].original_name}</h3>
                                 <h4 class="PeliculasTexto">${data.results[i].first_air_date}</h4>
