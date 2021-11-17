@@ -89,6 +89,10 @@ ul.cajitasInfo li{
   padding-left: 25px;
 }
 
+.nombre{
+  font-weight: bold;
+}
+
 body{
   background-image: url("../Imagenes/fondo-madera.jpeg");
 }

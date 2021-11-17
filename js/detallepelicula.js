@@ -17,6 +17,8 @@ fetch(url)
         let fecha = document.querySelector('.fecha');
         let duracion = document.querySelector('.duracion');
         let sinopsis = document.querySelector('.sinopsis');
+        let img = document.querySelector('.fotoJoker');
+        let generos = document.querySelector('.generos')
 
         detalleDe.innerText = `Detalle de ${data.title}`;
         nombre.innerText = data.title;
@@ -24,7 +26,8 @@ fetch(url)
         fecha.innerText += data.release_date;
         duracion.innerText += `${data.runtime} minutos`;
         sinopsis.innerText += data.overview;
-
+        img.src = `https://image.tmdb.org/t/p/w342/${data.poster_path}`;
+        
 
     })
     .catch(function(error){
