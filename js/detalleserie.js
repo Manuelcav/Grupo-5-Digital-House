@@ -14,11 +14,17 @@ fetch (url)
         let detalleDe = document.querySelector('.detalleDeJoker');
         let nombre = document.querySelector('.nombre2');
         let calificacion = document.querySelector('.calificacion2');
+        let fecha = document.querySelector('.fecha2');
+        let cantidad = document.querySelector('.cantidad');
+        let sinopsis = document.querySelector('.sinopsis2');
         let img = document.querySelector('.fotoBreakingBad');
 
-        detalleDe.innerText = `Detalle de ${data.title}`;
-        nombre.innerText = data.title;
+        detalleDe.innerText = `Detalle de ${data.name}`;
+        nombre.innerText = data.name;
         calificacion.innerText += data.vote_average;
+        fecha.innerText += data.first_air_date;
+        cantidad.innerText += data.number_of_episodes;
+        sinopsis.innerText += data.overview;
         img.src = `https://image.tmdb.org/t/p/w342/${data.poster_path}`;
 
     })
