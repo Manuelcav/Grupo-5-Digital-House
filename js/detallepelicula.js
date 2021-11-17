@@ -14,9 +14,17 @@ fetch(url)
         let detalleDe = document.querySelector('.detalleDeJoker');
         let nombre = document.querySelector('.nombre');
         let calificacion = document.querySelector('.calificacion');
+        let fecha = document.querySelector('.fecha');
+        let duracion = document.querySelector('.duracion');
+        let sinopsis = document.querySelector('.sinopsis');
 
         detalleDe.innerText = `Detalle de ${data.title}`;
-        
+        nombre.innerText = data.title;
+        calificacion.innerText += data.vote_average;
+        fecha.innerText += data.release_date;
+        duracion.innerText += `${data.runtime} minutos`;
+        sinopsis.innerText += data.overview;
+
 
     })
     .catch(function(error){
