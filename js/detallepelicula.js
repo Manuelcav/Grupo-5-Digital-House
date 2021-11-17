@@ -10,6 +10,8 @@ fetch(url)
     })
     .then(function(data){
         console.log(data);
+        let detalleJoker = document.querySelector('.detalleDeJoker');
+        let li = document.querySelector(li);
     })
     .catch(function(error){
         console.log(error);

@@ -103,8 +103,9 @@ body{
 
 .cajaGrande{
   display: flex;
-  justify-content: end;
+  justify-content: center;
   margin-bottom: 100px;
+  margin-right: 140px;
 }
 
 .fotoLogo{
