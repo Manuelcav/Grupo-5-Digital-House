@@ -11,9 +11,14 @@ fetch (url)
     .then(function(data){
         console.log(data);
 
-        let detalleDe = document.querySelector('detalleDeJoker');
-        let nombre = document.querySelector('nombre');
+        let detalleDe = document.querySelector('.detalleDeJoker');
+        let nombre = document.querySelector('.nombre2');
+        let calificacion = document.querySelector('.calificacion2');
+        let img = document.querySelector('.fotoBreakingBad');
 
-        detalleDe.innerText = `Detalle de ${data.name}`
+        detalleDe.innerText = `Detalle de ${data.title}`;
         nombre.innerText = data.title;
+        calificacion.innerText += data.vote_average;
+        img.src = `https://image.tmdb.org/t/p/w342/${data.poster_path}`;
+
     })
