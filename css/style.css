@@ -258,7 +258,7 @@ ul.cajitasInfo2 li{
   float: left;
   overflow: hidden;
   margin-left: 20%;
-  margin-top: 100px;
+  margin-top: 65px;
   margin-right: 20%;
   background-color: rgb(93, 109, 126);
   border: solid 5px rgb(93, 109, 126);
@@ -268,21 +268,25 @@ ul.cajitasInfo2 li{
   display: block;
   float: left;
   overflow: hidden;
-  margin-top: 100px;
+  margin-top: 65px;
   background-color: rgb(93, 109, 126);
   border: solid 5px rgb(93, 109, 126);
 }
 
 div.GenerosSeries h3{
   color: black;
-  font-style: italic;
-  text-decoration: underline;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 1px;
+  border: solid 1px black;
 }
 
 div.GenerosPeliculas h3{
   color: black;
-  font-style: italic;
-  text-decoration: underline;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 1px;
+  border: solid 1px black;
 }
 
 .tituloGeneros{
