@@ -353,7 +353,14 @@ color: white;
   color: white;
 } 
 
-.detalleGeneros{
+.detalleGenerosSeries{
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.detalleGenerosPeliculas{
   display: flex;
   align-items: baseline;
   margin-bottom: 50px;
