@@ -26,8 +26,15 @@ fetch(url)
         fecha.innerText += data.release_date;
         duracion.innerText += `${data.runtime} minutos`;
         sinopsis.innerText += data.overview;
+       
         img.src = `https://image.tmdb.org/t/p/w342/${data.poster_path}`;
-        
+
+        let genero = '';
+        for(let i=0; i<data.genres.length; i++){
+            genero += `<a href=detail-genres.html?id=${data.genres[i].id}></a>`,
+            console.log(genero);
+        };
+        generos.innerHTML += genero;
 
     })
     .catch(function(error){
