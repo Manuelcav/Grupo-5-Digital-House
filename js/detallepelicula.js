@@ -31,9 +31,11 @@ fetch(url)
 
         let genero = '';
         for(let i=0; i<data.genres.length; i++){
-            genero += `<a href=detail-genres.html?id=${data.genres[i].id}></a>`,
+            genero += `
+            <a href='detail-genres.html?id=${data.genres[i].id}' target='blank'><p>${data.genres[i].name}</p></a>`;
             console.log(genero);
         };
+
         generos.innerHTML += genero;
 
     })
