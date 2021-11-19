@@ -13,7 +13,7 @@ fetch(urlGenerosPeliculas)
         for (let i=0; i<19; i++) {
             console.log(data.genres[i]);
             generosPeliculas += `<li>
-                                    <a href="detail-genres.html?id=${data.genres[i].id}"><h3>${data.genres[i].name}</h3></a>
+                                    <a href="detail-genres.html?id=${data.genres[i].id}&title=${data.genres[i].name}"><h3>${data.genres[i].name}</h3></a>
                                 </li>`;
         }
 
@@ -38,7 +38,7 @@ fetch(urlGenerosSeries)
         for (let i=0; i<16; i++) {
             console.log(data);
             generosSeries += `<li>
-                                    <a href="detail-genres.html?id=${data.genres[i].id}"><h3>${data.genres[i].name}</h3></a>
+                                    <a href="detail-genres.html?id=${data.genres[i].id}&title=${data.genres[i].name}"><h3>${data.genres[i].name}</h3></a>
                                 </li>`;
         }
     

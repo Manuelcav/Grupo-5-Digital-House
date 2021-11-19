@@ -1,6 +1,7 @@
 let qs = location.search;
 let qsto = new URLSearchParams(qs);
 let id = qsto.get('id');
+let title = qsto.get('title');
 
 let urlDetalleGenerosPeliculas = `https://api.themoviedb.org/3/discover/movie?api_key=6c457fc9dfa8d0a4c7572bd5162907c9&with_genres=${id}`;
 let urlDetalleGenerosSeries = `https://api.themoviedb.org/3/discover/tv?api_key=6c457fc9dfa8d0a4c7572bd5162907c9&with_genres=${id}`;
@@ -13,6 +14,7 @@ fetch(urlDetalleGenerosPeliculas)
         console.log(data);
         let detalleGenerosPeliculas = document.querySelector('ul.detalleGenerosPeliculas');
         let generosPeliculas = '';
+        let tituloGenero = document.querySelector('.tituloGeneros');
 
         for (let i=0; i<5; i++) {
             console.log([i]);
@@ -23,8 +25,8 @@ fetch(urlDetalleGenerosPeliculas)
                                 </li>`;
         }
 
-        
         detalleGenerosPeliculas.innerHTML = generosPeliculas 
+        tituloGenero.innerText = `Genero: ${title}`
 
     })
     .catch(function(error){
@@ -39,6 +41,7 @@ fetch(urlDetalleGenerosPeliculas)
         console.log(data);
         let detalleGenerosPeliculas = document.querySelector('ul.detalleGenerosSeries');
         let generosPeliculas = '';
+        let tituloGenero = document.querySelector('.tituloGeneros');
 
         for (let i=0; i<5; i++) {
             console.log([i]);
@@ -49,7 +52,7 @@ fetch(urlDetalleGenerosPeliculas)
                                 </li>`;
         }
 
-        
+        tituloGenero.innerText = `Genero: ${title}`
         detalleGenerosPeliculas.innerHTML = generosPeliculas 
 
     })
@@ -57,5 +60,5 @@ fetch(urlDetalleGenerosPeliculas)
         console.log(error);
     })
 
-    
+
     
