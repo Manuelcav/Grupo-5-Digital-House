@@ -17,7 +17,7 @@ fetch(urlDetalleGenerosPeliculas)
         for (let i=0; i<5; i++) {
             console.log([i]);
             generosPeliculas += `<li class='detalleGenerosItem' >
-                                    <a href="">
+                                    <a href="detallepelicula.html?id=${data.results[i].id}">
                                         <img src="https://image.tmdb.org/t/p/w342/${data.results[i].poster_path}" alt="${data.results[i].title}" ><h3 class="PeliculasTexto">${data.results[i].original_title}</h3>
                                     </a>
                                 </li>`;
