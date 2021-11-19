@@ -33,4 +33,32 @@ fetch(urlDetalleGenerosPeliculas)
         console.log(error);
     })
 
+    fetch(urlDetalleGenerosSeries)
+    .then(function(response){
+        return response.json(); 
+    })
+    .then(function(data){
+        console.log(data);
+        let detalleGenerosPeliculas = document.querySelector('ul.detalleGenerosSeries');
+        let tituloGenero = document.querySelector('.tituloGeneros')
+        let generosPeliculas = '';
+
+        for (let i=0; i<3; i++) {
+            console.log([i]);
+            generosPeliculas += `<li class='detalleGenerosItem' >
+                                    <a href="detalleserie.html?id=${data.results[i].id}">
+                                        <img src="https://image.tmdb.org/t/p/w342/${data.results[i].poster_path}" alt="${data.results[i].name}" ><h3 class="PeliculasTexto">${data.results[i].name}</h3>
+                                    </a>
+                                </li>`;
+        }
+
+        
+        detalleGenerosPeliculas.innerHTML = generosPeliculas 
+        tituloGenero.innerText = data.results.name
+
+    })
+    .catch(function(error){
+        console.log(error);
+    })
+
     
