@@ -475,7 +475,13 @@ li.detalleGenerosItem img{
     margin-top: 20px;
   }
 
-  .detalleGeneros{
+  .detalleGenerosSeries{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .detalleGenerosPeliculas{
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;

@@ -12,9 +12,10 @@ fetch(urlDetalleGenerosPeliculas)
     .then(function(data){
         console.log(data);
         let detalleGenerosPeliculas = document.querySelector('ul.detalleGenerosPeliculas');
+        let tituloGenero = document.querySelector('.tituloGeneros')
         let generosPeliculas = '';
 
-        for (let i=0; i<5; i++) {
+        for (let i=0; i<3; i++) {
             console.log([i]);
             generosPeliculas += `<li class='detalleGenerosItem' >
                                     <a href="detallepelicula.html?id=${data.results[i].id}">
@@ -25,6 +26,7 @@ fetch(urlDetalleGenerosPeliculas)
 
         
         detalleGenerosPeliculas.innerHTML = generosPeliculas 
+        tituloGenero.innerText = data.results.name
 
     })
     .catch(function(error){
