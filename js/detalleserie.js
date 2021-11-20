@@ -18,6 +18,13 @@ fetch (url)
         let cantidad = document.querySelector('.cantidad');
         let sinopsis = document.querySelector('.sinopsis2');
         let img = document.querySelector('.fotoBreakingBad');
+        let generos = document.querySelector('.generos2');
+
+        let genero = ''
+        for(let i=0; i<data.genres.length; i++){
+            genero += `<a href='detail-genres.html?id=${data.genres[i].id}' target='blank'><p class=genero>${data.genres[i].name}</p></a>`;
+            console.log(genero);
+        };
 
         detalleDe.innerText = `Detalle de ${data.name}`;
         nombre.innerText = data.name;
@@ -26,5 +33,6 @@ fetch (url)
         cantidad.innerText += data.number_of_episodes;
         sinopsis.innerText += data.overview;
         img.src = `https://image.tmdb.org/t/p/w342/${data.poster_path}`;
+        generos.innerHTML += genero;
 
     })
