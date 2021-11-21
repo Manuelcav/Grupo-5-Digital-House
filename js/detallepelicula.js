@@ -41,3 +41,12 @@ fetch(url)
     .catch(function(error){
         console.log(error);
     })
+
+let fav = [];
+
+let favoritos = document.querySelector('.favoritos');
+
+favoritos.addEventListener('click',function(evento){
+    evento.preventDefault();
+})
+
