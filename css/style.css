@@ -244,10 +244,16 @@ ul.cajitasInfo2 li{
 
 /* css de favoritos */
 
-.main{
+.cajaFav{
+  height: auto;
+  width: 80%;
+  background-color: rgb(93, 109, 126);
+  margin-top: 40px;
+  margin-left: 150px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
 }
 
 /* css de generos */
