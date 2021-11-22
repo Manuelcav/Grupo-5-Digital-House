@@ -19,6 +19,7 @@ header{
 header nav{
  height: 100%;
  float: right;
+ margin-top: 10px;
 }
     
 header nav li{
@@ -29,8 +30,6 @@ header nav li{
  text-decoration: none;
  font-size: 20px;
  line-height: 5px;
- border-radius: 0px;
- 
 }
    
 .logo{
@@ -58,8 +57,10 @@ header nav li{
 
 .search-button{
   height: 10%;
+  margin-top: 15px;
   float: left;
 }
+
 /* css de detalle pelicula */
 
 .detalleDeJoker{
