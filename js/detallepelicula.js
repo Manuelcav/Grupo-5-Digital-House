@@ -44,9 +44,20 @@ fetch(url)
 
 let fav = [];
 
+let recuperarStorage = localStorage.getItem('fav');
+
+if(recuperarStorage != null){
+    fav = JSON.parse(recuperarStorage);
+}
+
 let favoritos = document.querySelector('.favoritos');
 
 favoritos.addEventListener('click',function(evento){
     evento.preventDefault();
+    fav.push(id); 
+    favoritos.innerText = 'Quitar de favoritos';
+    let favAString = JSON.stringify(fav);
+    localStorage.setItem('favoritos', favAString);
+    console.log(localStorage);
 })
 
