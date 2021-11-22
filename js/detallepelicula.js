@@ -52,12 +52,23 @@ if(recuperarStorage != null){
 
 let favoritos = document.querySelector('.favoritos');
 
+if(fav.includes(id)){
+    favoritos.innerText = "Quitar de favoritos";
+}
+
 favoritos.addEventListener('click',function(evento){
     evento.preventDefault();
+
+    if(fav.includes(id)){
+        let ubicacion = fav.indexOf(id);
+        fav.splice(indice, 1);
+        fav.innerText = "Agregar a favoritos"
+    }
+
     fav.push(id); 
-    favoritos.innerText = 'Quitar de favoritos';
+    favoritos.innerText =  "Quitar de favoritos";
     let favAString = JSON.stringify(fav);
-    localStorage.setItem('favoritos', favAString);
+    localStorage.setItem('fav', favAString);
     console.log(localStorage);
 })
 
