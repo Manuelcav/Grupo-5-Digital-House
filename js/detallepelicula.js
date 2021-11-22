@@ -61,14 +61,17 @@ favoritos.addEventListener('click',function(evento){
 
     if(fav.includes(id)){
         let ubicacion = fav.indexOf(id);
-        fav.splice(indice, 1);
-        fav.innerText = "Agregar a favoritos"
+        fav.splice(ubicacion, 1);
+        fav.innerText = "Agregar a favoritos";
+    } else {
+        fav.push(id);
+        favoritos.innerText = "Quitar de favoritos";
     }
 
     fav.push(id); 
     favoritos.innerText =  "Quitar de favoritos";
     let favAString = JSON.stringify(fav);
     localStorage.setItem('fav', favAString);
-    console.log(localStorage);
+
 })
 
