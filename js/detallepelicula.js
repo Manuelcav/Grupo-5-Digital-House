@@ -52,26 +52,30 @@ if(recuperarStorage != null){
 
 let favoritos = document.querySelector('.favoritos');
 
+let botonFavoritos = document.querySelector('.botonFavoritos');
+
 if(fav.includes(id)){
-    favoritos.innerText = "Quitar de favoritos";
+    botonFavoritos.innerText = 'Quitar de favoritos';
 }
 
-favoritos.addEventListener('click',function(evento){
+favoritos.addEventListener('click', function(evento){
     evento.preventDefault();
 
     if(fav.includes(id)){
-        let ubicacion = fav.indexOf(id);
-        fav.splice(ubicacion, 1);
-        fav.innerText = "Agregar a favoritos";
+        let indice = fav.indexOf(id);
+        fav.splice(indice, 1);
+        botonFavoritos.innerText = 'Agregar a favoritos';
     } else {
         fav.push(id);
-        favoritos.innerText = "Quitar de favoritos";
+        botonFavoritos.innerHTML = 'Quitar de favoritos';
     }
 
-    fav.push(id); 
-    favoritos.innerText =  "Quitar de favoritos";
+    console.log(fav);
+
     let favAString = JSON.stringify(fav);
     localStorage.setItem('fav', favAString);
+
+    console.log(localStorage);
 
 })
 

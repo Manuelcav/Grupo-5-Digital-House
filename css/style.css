@@ -73,7 +73,7 @@ header nav li{
 
 .cajaInfo{
   background-color: rgb(93, 109, 126);
-  height: 900px;
+  height: 950px;
   width: 40%;
   margin-left: 130px;
   margin-top: 10px;
@@ -98,8 +98,8 @@ body{
 }
 
 .fotoJoker{
-  height: 900px;
-  width: 40%;
+  height: 950px;
+  width: 50%;
   margin-top: 10px;
   margin-left: 90px;
 }
@@ -244,13 +244,12 @@ ul.cajitasInfo2 li{
 
 /* css de favoritos */
 
-.cajaFav{
-  height: 500px;
-  width: 70%;
-  background-color: rgb(93, 109, 126);
-  margin-top: 40px;
-  margin-left: 205px;
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 /* css de generos */
 
 .subTituloGeneros{

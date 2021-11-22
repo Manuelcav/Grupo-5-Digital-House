@@ -36,3 +36,38 @@ fetch (url)
         generos.innerHTML += genero;
 
     })
+
+    let fav = [];
+
+let recuperarStorage = localStorage.getItem('fav');
+
+if(recuperarStorage != null){
+    fav = JSON.parse(recuperarStorage);
+}
+
+let favoritos = document.querySelector('.favoritos2');
+
+let botonFavoritos = document.querySelector('.botonFavoritos2');
+
+if(fav.includes(id)){
+    botonFavoritos.innerText = 'Quitar de favoritos';
+}
+
+favoritos.addEventListener('click', function(evento){
+    evento.preventDefault();
+
+    if(fav.includes(id)){
+        let indice = fav.indexOf(id);
+        fav.splice(indice, 1);
+        botonFavoritos.innerText = 'Agregar a favoritos';
+    } else {
+        fav.push(id);
+        botonFavoritos.innerHTML = 'Quitar de favoritos';
+    }
+
+    console.log(fav);
+
+    let favAString = JSON.stringify(fav);
+    localStorage.setItem('fav', favAString);
+
+})
