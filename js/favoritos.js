@@ -51,7 +51,7 @@ function buscarYMostrarFav(id){
 
 let recuperarStoragee = localStorage.getItem('fav');
 
-let favoritoss = JSON.parse(recuperarStorage);
+let favoritoss = JSON.parse(recuperarStoragee);
 
 
 
@@ -81,13 +81,13 @@ function buscarYMostrarFavv(id){
             console.log(data);
             favv += `<article>
             <a href='detalleserie.html?id=${data.id}' target="blanck">
-                                <img src='https://image.tmdb.org/t/p/w342/${data.poster_path}' alt="${data.original_name}" >
+                                <img src='https://image.tmdb.org/t/p/w342/${data.poster_path}' alt="${data.original_name}">
                                 <h3 class="PeliculasTexto"> ${data.original_name}</h3>
                                 <h4 class="PeliculasTexto">${data.first_air_date}</h4>
                             </a>
-        </article>`;
+                    </article>`;
 
-        mainn.innerHTML = fav
+        mainn.innerHTML = favv
             
         })
 
