@@ -51,7 +51,6 @@ fetch(urlSeries)
                                 </li>`;
         }
         resultadoSeriesEncontradas.innerHTML = resultadoSeries;
-        
     })
     .catch(function(error){
         console.log(error);

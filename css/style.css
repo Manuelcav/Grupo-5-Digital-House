@@ -73,6 +73,24 @@ header nav li{
   font-weight: normal;
 }
 
+.subtituloSeriesBusqueda{
+  text-align: center;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 30px;
+  color: white;
+} 
+
+.subtituloPeliculasBusqueda{
+  text-align: center;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 30px;
+  color: white;
+} 
+
 /* css de detalle pelicula */
 
 .detalleDeJoker{
