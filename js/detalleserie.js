@@ -37,7 +37,7 @@ fetch (url)
 
     })
 
-    let fav = [];
+let fav = [];
 
 let recuperarStorage = localStorage.getItem('fav');
 
@@ -69,5 +69,7 @@ favoritos.addEventListener('click', function(evento){
 
     let favAString = JSON.stringify(fav);
     localStorage.setItem('fav', favAString);
+
+    console.log(localStorage);
 
 })

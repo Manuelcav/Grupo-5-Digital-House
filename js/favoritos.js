@@ -34,7 +34,7 @@ function buscarYMostrarFav(id){
                 <h3 class="PeliculasTexto"> ${data.original_title}</h3>
                 <h4 class="PeliculasTexto">${data.release_date}</h4>
             </a>
-        </article>`;
+                 </article>`;
 
         main.innerHTML = fav
             
@@ -44,7 +44,7 @@ function buscarYMostrarFav(id){
             console.log(error);
         })
 
-}
+};
 
 
 
@@ -52,7 +52,7 @@ let recuperarStoragee = localStorage.getItem('fav');
 
 let favoritoss = JSON.parse(recuperarStoragee);
 
-
+console.log(favoritoss);
 
 let mainn = document.querySelector('.main');
 let favv = '';
