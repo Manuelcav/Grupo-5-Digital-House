@@ -18,14 +18,16 @@ fetch(url)
         let duracion = document.querySelector('.duracion');
         let sinopsis = document.querySelector('.sinopsis');
         let img = document.querySelector('.fotoJoker');
-        let generos = document.querySelector('.generos')
+        let generos = document.querySelector('.generos');
+
+        nombre.style.fontWeight = 'bold';
 
         detalleDe.innerText = `Detalle de ${data.title}`;
         nombre.innerText = data.title;
-        calificacion.innerText += data.vote_average;
-        fecha.innerText += data.release_date;
-        duracion.innerText += `${data.runtime} minutos`;
-        sinopsis.innerText += data.overview;
+        calificacion.innerHTML = `<strong>Calificación: </strong>${data.vote_average}`;
+        fecha.innerHTML = `<strong>Fecha de estreno: </strong>${data.release_date}`;
+        duracion.innerHTML = `<strong>Duración: </strong>${data.runtime} minutos`;
+        sinopsis.innerHTML = ` <strong>Sinópsis: </strong> ${data.overview}`;
        
         img.src = `https://image.tmdb.org/t/p/w342/${data.poster_path}`;
 
@@ -42,12 +44,12 @@ fetch(url)
         console.log(error);
     })
 
-let fav = [];
+let favPeli = [];
 
-let recuperarStorage = localStorage.getItem('fav');
+let recuperarStorage = localStorage.getItem('favPeli');
 
 if(recuperarStorage != null){
-    fav = JSON.parse(recuperarStorage);
+    favPeli = JSON.parse(recuperarStorage);
 }
 
 let favoritos = document.querySelector('.favoritos');
@@ -61,19 +63,19 @@ if(fav.includes(id)){
 favoritos.addEventListener('click', function(evento){
     evento.preventDefault();
 
-    if(fav.includes(id)){
+    if(favPeli.includes(id)){
         let indice = fav.indexOf(id);
-        fav.splice(indice, 1);
+        favPeli.splice(indice, 1);
         botonFavoritos.innerText = 'Agregar a favoritos';
     } else {
-        fav.push(id);
+        favPeli.push(id);
         botonFavoritos.innerHTML = 'Quitar de favoritos';
     }
 
-    console.log(fav);
+    console.log(favPeli);
 
-    let favAString = JSON.stringify(fav);
-    localStorage.setItem('fav', favAString);
+    let favAString = JSON.stringify(favPeli);
+    localStorage.setItem('favPeli', favAString);
 
     console.log(localStorage);
 

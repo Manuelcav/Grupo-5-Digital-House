@@ -1,4 +1,4 @@
-let recuperarStorage = localStorage.getItem('fav');
+let recuperarStorage = localStorage.getItem('favPeli');
 
 let favoritos = JSON.parse(recuperarStorage);
 
@@ -48,7 +48,7 @@ function buscarYMostrarFav(id){
 
 
 
-let recuperarStoragee = localStorage.getItem('fav');
+let recuperarStoragee = localStorage.getItem('favSerie');
 
 let favoritoss = JSON.parse(recuperarStoragee);
 

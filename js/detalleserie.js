@@ -20,6 +20,8 @@ fetch (url)
         let img = document.querySelector('.fotoBreakingBad');
         let generos = document.querySelector('.generos2');
 
+        nombre.style.fontWeight = 'bold';
+
         let genero = ''
         for(let i=0; i<data.genres.length; i++){
             genero += `<a href='detail-genres.html?id=${data.genres[i].id}' target='blank'><p class=genero>${data.genres[i].name}</p></a>`;
@@ -28,47 +30,47 @@ fetch (url)
 
         detalleDe.innerText = `Detalle de ${data.name}`;
         nombre.innerText = data.name;
-        calificacion.innerText += data.vote_average;
-        fecha.innerText += data.first_air_date;
-        cantidad.innerText += data.number_of_episodes;
-        sinopsis.innerText += data.overview;
+        calificacion.innerHTML = `<strong>Calificación: </strong>${data.vote_average}`;
+        fecha.innerHTML = `<strong>Fecha de estreno: </strong> ${data.first_air_date}`;
+        cantidad.innerHTML = ` <strong>Cantidad de episodios: </strong> ${data.number_of_episodes}`;
+        sinopsis.innerHTML = ` <strong>Sinópsis: </strong>${data.overview}`;
         img.src = `https://image.tmdb.org/t/p/w342/${data.poster_path}`;
         generos.innerHTML += genero;
 
     })
 
-let fav = [];
+let favSerie = [];
 
-let recuperarStorage = localStorage.getItem('fav');
+let recuperarStorage = localStorage.getItem('favSerie');
 
 if(recuperarStorage != null){
-    fav = JSON.parse(recuperarStorage);
+    favSerie = JSON.parse(recuperarStorage);
 }
 
 let favoritos = document.querySelector('.favoritos2');
 
 let botonFavoritos = document.querySelector('.botonFavoritos2');
 
-if(fav.includes(id)){
+if(favSerie.includes(id)){
     botonFavoritos.innerText = 'Quitar de favoritos';
 }
 
 favoritos.addEventListener('click', function(evento){
     evento.preventDefault();
 
-    if(fav.includes(id)){
-        let indice = fav.indexOf(id);
-        fav.splice(indice, 1);
+    if(favSerie.includes(id)){
+        let indice = favSerie.indexOf(id);
+        favSerie.splice(indice, 1);
         botonFavoritos.innerText = 'Agregar a favoritos';
     } else {
-        fav.push(id);
+        favSerie.push(id);
         botonFavoritos.innerHTML = 'Quitar de favoritos';
     }
 
-    console.log(fav);
+    console.log(favSerie);
 
-    let favAString = JSON.stringify(fav);
-    localStorage.setItem('fav', favAString);
+    let favAString = JSON.stringify(favSerie);
+    localStorage.setItem('favSerie', favAString);
 
     console.log(localStorage);
 
