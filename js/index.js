@@ -84,4 +84,18 @@ fetch(urlSeries)
     .catch(function(error){
         console.log(error);
     })
+
+let formulario = document.querySelector('form');
+let campoBuscar = document.querySelector('.Searchbar');
+
+formulario.addEventListener('submit',function(event){
+    event.preventDefault();
+    if (campoBuscar.value == ''){
+        alert("La búsqueda está vacía");
+    } else if (campoBuscar.value.length < 3){
+        alert('la búsqueda debe tener al menos 3 caracteres');
+    } else {
+        formulario.submit();
+    }
+})
  
