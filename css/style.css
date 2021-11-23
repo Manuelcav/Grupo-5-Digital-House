@@ -64,12 +64,13 @@ header nav li{
 /* resultado de busqueda */
 
 .tituloResultadoBusqueda {
+  text-align: center;
   height: 60px;
   width: 100%;
   background-color: rgb(149, 165, 166);
-  text-align: center;
-  padding-top: 13px;
+  padding-top: 20px;
   font-size: 30px;
+  font-weight: normal;
 }
 
 /* css de detalle pelicula */
@@ -488,6 +489,10 @@ li.detalleGenerosItem img{
   }
 
   .tituloGeneros{
+    margin-top: 60px;
+  }
+
+  .tituloResultadoBusqueda{
     margin-top: 60px;
   }
 

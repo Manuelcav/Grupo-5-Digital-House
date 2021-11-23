@@ -12,7 +12,22 @@ fetch(urlPeliculas)
     return response.json();
 })
 .then (function(data){
-
+    console.log(data.results);
+    let resultadoPeliculasEncontradas = document.querySelector('ul.detalleGenerosPeliculas');
+    let resultadoPeliculas = '';
+    /*
+    if(data.results.length == 0){
+        document.querySelector('h1.subtituloDetalleGenero').innerText += `No se encontraron peliculas con ${query}`;
+    } else (data.results.length > 0) */
+        for(let i=0; i>5; i++ ){
+            console.log(data.results[i]);
+            resultadoPeliculas += `<li class='detalleGenerosItem'>
+                                    <a href="detallepelicula.html?id=${data.results[i].id}">
+                                    <img src="https://image.tmdb.org/t/p/w342/${data.results[i].poster_path}" alt="${data.results[i].title}" ><h3 class="PeliculasTexto">${data.results[i].original_title}</h3>
+                                    </a>
+                                </li>`;
+    }
+    resultadoPeliculasEncontradas.innerHTML = resultadoPeliculas;
 })
 .catch(function(error){
     console.log(error);
