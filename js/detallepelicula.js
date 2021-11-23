@@ -44,12 +44,12 @@ fetch(url)
         console.log(error);
     })
 
-let favPeli = [];
+let fav = [];
 
 let recuperarStorage = localStorage.getItem('favPeli');
 
 if(recuperarStorage != null){
-    favPeli = JSON.parse(recuperarStorage);
+    fav = JSON.parse(recuperarStorage);
 }
 
 let favoritos = document.querySelector('.favoritos');
@@ -63,18 +63,18 @@ if(fav.includes(id)){
 favoritos.addEventListener('click', function(evento){
     evento.preventDefault();
 
-    if(favPeli.includes(id)){
+    if(fav.includes(id)){
         let indice = fav.indexOf(id);
-        favPeli.splice(indice, 1);
+        fav.splice(indice, 1);
         botonFavoritos.innerText = 'Agregar a favoritos';
     } else {
-        favPeli.push(id);
+        fav.push(id);
         botonFavoritos.innerHTML = 'Quitar de favoritos';
     }
 
-    console.log(favPeli);
+    console.log(fav);
 
-    let favAString = JSON.stringify(favPeli);
+    let favAString = JSON.stringify(fav);
     localStorage.setItem('favPeli', favAString);
 
     console.log(localStorage);

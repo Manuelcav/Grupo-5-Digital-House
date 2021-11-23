@@ -39,37 +39,37 @@ fetch (url)
 
     })
 
-let favSerie = [];
+let fav = [];
 
 let recuperarStorage = localStorage.getItem('favSerie');
 
 if(recuperarStorage != null){
-    favSerie = JSON.parse(recuperarStorage);
+    fav = JSON.parse(recuperarStorage);
 }
 
 let favoritos = document.querySelector('.favoritos2');
 
 let botonFavoritos = document.querySelector('.botonFavoritos2');
 
-if(favSerie.includes(id)){
+if(fav.includes(id)){
     botonFavoritos.innerText = 'Quitar de favoritos';
 }
 
 favoritos.addEventListener('click', function(evento){
     evento.preventDefault();
 
-    if(favSerie.includes(id)){
-        let indice = favSerie.indexOf(id);
-        favSerie.splice(indice, 1);
+    if(fav.includes(id)){
+        let indice = fav.indexOf(id);
+        fav.splice(indice, 1);
         botonFavoritos.innerText = 'Agregar a favoritos';
     } else {
-        favSerie.push(id);
+        fav.push(id);
         botonFavoritos.innerHTML = 'Quitar de favoritos';
     }
 
-    console.log(favSerie);
+    console.log(fav);
 
-    let favAString = JSON.stringify(favSerie);
+    let favAString = JSON.stringify(fav);
     localStorage.setItem('favSerie', favAString);
 
     console.log(localStorage);
