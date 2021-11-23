@@ -136,7 +136,7 @@ width: 100%;
 background-color: black;
 color: white;
 text-align: center;
-height: 13%;
+height: 10%;
 }
 
 .logoTMDB{
@@ -524,6 +524,10 @@ li.detalleGenerosItem img{
     background-color: #E6E6FA;
     margin-left: 18px;
     margin-right: 14px;
+  }
+
+  .logoTMDB{
+    height: 35px;
   }
 
 }
