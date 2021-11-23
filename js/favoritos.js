@@ -1,11 +1,10 @@
-
 let recuperarStorage = localStorage.getItem('fav');
 
 let favoritos = JSON.parse(recuperarStorage);
 
+console.log(favoritos);
 
-
-let main = document.querySelector('.cajaFav');
+let main = document.querySelector('.main');
 let fav = '';
 
 if(favoritos == null || favoritos.length == 0){
@@ -55,7 +54,7 @@ let favoritoss = JSON.parse(recuperarStoragee);
 
 
 
-let mainn = document.querySelector('.cajaFav');
+let mainn = document.querySelector('.main');
 let favv = '';
 
 if(favoritoss == null || favoritoss.length == 0){
