@@ -256,7 +256,13 @@ ul.cajitasInfo2 li{
 
 /* css de favoritos */
 
-.main{
+.pelis{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.series{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
