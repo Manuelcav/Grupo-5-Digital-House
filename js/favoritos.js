@@ -8,7 +8,7 @@ let pelis = document.querySelector('.pelis');
 let fav = '';
 
 if(favoritos == null || favoritos.length == 0){
-    pelis.innerHTML = '<h3>No hay favoritos</h3>'
+    pelis.innerHTML = '<h3 style="color: white">No hay peliculas favoritas</h3>'
 } else {
     for(let i=0; i<favoritos.length; i++){
         buscarYMostrarFav(favoritos[i]);
@@ -57,7 +57,7 @@ let series = document.querySelector('.series');
 let favv = '';
 
 if(favoritoss == null || favoritoss.length == 0){
-    series.innerHTML = '<h3>No hay favoritos</h3>'
+    series.innerHTML = '<h3 style="color: white">No hay series favoritas</h3>'
 } else {
     for(let i=0; i<favoritoss.length; i++){
         buscarYMostrarFavv(favoritoss[i]);
@@ -89,11 +89,14 @@ function buscarYMostrarFavv(id){
     
         })
 
+
         .catch(function(error){
             console.log(error);
         })
 
 }
+
+
 
 
 
