@@ -61,6 +61,17 @@ header nav li{
   float: left;
 }
 
+/* resultado de busqueda */
+
+.tituloResultadoBusqueda {
+  height: 60px;
+  width: 100%;
+  background-color: rgb(149, 165, 166);
+  text-align: center;
+  padding-top: 13px;
+  font-size: 30px;
+}
+
 /* css de detalle pelicula */
 
 .detalleDeJoker{
@@ -510,8 +521,5 @@ li.detalleGenerosItem img{
     margin-right: 14px;
   }
 
-  .header-right{
-    float: none;
-  }
 }
 
