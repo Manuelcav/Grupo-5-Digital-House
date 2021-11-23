@@ -136,7 +136,12 @@ width: 100%;
 background-color: black;
 color: white;
 text-align: center;
-height: 10%;
+height: 13%;
+}
+
+.logoTMDB{
+  height: 50px;
+  width: 50px;
 }
 
 .genero{
