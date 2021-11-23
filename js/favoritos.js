@@ -1,11 +1,10 @@
-
 let recuperarStorage = localStorage.getItem('fav');
 
 let favoritos = JSON.parse(recuperarStorage);
 
+console.log(favoritos);
 
-
-let main = document.querySelector('.cajaFav');
+let main = document.querySelector('.main');
 let fav = '';
 
 if(favoritos == null || favoritos.length == 0){
@@ -35,7 +34,7 @@ function buscarYMostrarFav(id){
                 <h3 class="PeliculasTexto"> ${data.original_title}</h3>
                 <h4 class="PeliculasTexto">${data.release_date}</h4>
             </a>
-        </article>`;
+                 </article>`;
 
         main.innerHTML = fav
             
@@ -45,7 +44,7 @@ function buscarYMostrarFav(id){
             console.log(error);
         })
 
-}
+};
 
 
 
@@ -53,9 +52,9 @@ let recuperarStoragee = localStorage.getItem('fav');
 
 let favoritoss = JSON.parse(recuperarStoragee);
 
+console.log(favoritoss);
 
-
-let mainn = document.querySelector('.cajaFav');
+let mainn = document.querySelector('.main');
 let favv = '';
 
 if(favoritoss == null || favoritoss.length == 0){

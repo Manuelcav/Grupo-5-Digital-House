@@ -230,7 +230,7 @@ ul.Peliculas3 img{
 
 .cajaInfo2{
   background-color: rgb(93, 109, 126);
-  height: 700px;
+  height: 950px;
   width: 40%;
   margin-left: 130px;
   margin-top: 10px;
@@ -248,7 +248,7 @@ ul.cajitasInfo2 li{
 }
 
 .fotoBreakingBad{
-  height: 700px;
+  height: 950px;
   width: 40%;
   margin-top: 10px;
   margin-left: 75px;
@@ -256,16 +256,10 @@ ul.cajitasInfo2 li{
 
 /* css de favoritos */
 
-.cajaFav{
-  height: auto;
-  width: 80%;
-  background-color: rgb(93, 109, 126);
-  margin-top: 40px;
-  margin-left: 150px;
+.main{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 /* css de generos */
